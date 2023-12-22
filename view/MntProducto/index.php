@@ -33,5 +33,6 @@
 <script src="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone-min.js"></script>
 <!-- TODO: Este es el JS de JSQUERY -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
+<!-- TODO: Este es el JS de mntproducto -->
+<script src="mntproducto.js"></script>
 </html>
