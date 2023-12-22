@@ -16,3 +16,28 @@ myDropzone.on('removedfile',file=>{
     arrImages.splice(i,1);
     console.log(arrImages);
 })
+ function init(){
+    $('#producto_form').on("submit",function(e){
+        guardaryeditar(e);
+    });
+}
+
+function guardaryeditar(e) {
+    e.preventDefault();
+    /*var formData=new FormData($("#producto_form")[0]);
+    var totalfiles=arrImages.length;
+    for (var i = 0; i < totalfiles; i++) {
+        formData.append("file[]",arrImages[i]);
+    }
+    $.ajax({
+        url:"../../controller/ProductoCtr.php=?op=guardar",
+        type:"POST",
+        data:formData,
+        contentType:false,
+        processData:false,
+        success: function (data) {
+            console.log(data);
+        }
+    })*/
+}
+init();

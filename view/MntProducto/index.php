@@ -15,15 +15,24 @@
         <div class="row">
             <div class="col-md-12">
                 <h1>Ejemplo de Drozone JS</h1>
-                <div class="form-group">
-                    <div class="dropzone">
-                        <div class="dz-default dz-message">
-                            <button class="dz-button" type="button">
-                                <img src="../../assets//archivo.jpg" alt="">
-                            </button>
+                <form id="producto_form" method="post">
+                    <div class="form-group">
+                        <label for="nombre_producto" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre_producto" name="nombre_producto" placeholder="Ingrese el nombre" required>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <div class="dropzone">
+                            <div class="dz-default dz-message">
+                                <button class="dz-button" type="button">
+                                    <img src="../../assets//archivo.jpg" alt="">
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                </form>
             </div>
         </div>
     </div>
@@ -35,4 +44,5 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <!-- TODO: Este es el JS de mntproducto -->
 <script src="mntproducto.js"></script>
+
 </html>
