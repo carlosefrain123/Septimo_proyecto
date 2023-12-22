@@ -5,7 +5,7 @@ $producto=new Producto();
 switch ($_GET['op']) {
     case 'guardar':
         $producto->insert_producto($_POST['nombre_producto']);
-        /* if (empty($_FILES['file']['name'])) {
+        if (empty($_FILES['file']['name'])) {
         }else{
             $countfiles=count($_FILES['file']['name']);
             $ruta="../assets/img";
@@ -18,7 +18,7 @@ switch ($_GET['op']) {
                 $destino=$ruta.$_FILES['file']['name'][$index];
                 move_uploaded_file($nombre,$destino);
             }
-        } */
+        } 
         break;    
 }
 ?>
