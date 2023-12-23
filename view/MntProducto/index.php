@@ -25,7 +25,7 @@
                         <div class="dropzone">
                             <div class="dz-default dz-message">
                                 <button class="dz-button" type="button">
-                                    <img src="../../assets//archivo.jpg" alt="">
+                                    <img src="../../assets/archivo.jpg" alt="">
                                 </button>
                             </div>
                         </div>
