@@ -17,7 +17,7 @@ switch ($_GET['op']) {
                 $nombre=$_FILES['file']['tmp_name'][$index];
                 $destino=$ruta.$_FILES['file']['name'][$index];
                 foreach ($datos as $row) {
-                    $producto->insert_imagenes($row['prod_id'],$nombre);
+                    $producto->insert_imagenes($row['prod_id'],$_FILES['file']['name'][$index]);
                 }
                 move_uploaded_file($nombre,$destino);
             }
