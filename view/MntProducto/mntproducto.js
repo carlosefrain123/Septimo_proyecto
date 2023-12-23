@@ -37,6 +37,8 @@ function guardaryeditar(e) {
         processData:false,
         success: function (data) {
             console.log(data);
+            $('#nombre_producto').val('');
+            Dropzone.forElement('.dropzone').removeAllFiles(true);
         }
     })
 }
